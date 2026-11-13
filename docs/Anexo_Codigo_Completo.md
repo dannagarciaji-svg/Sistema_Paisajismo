@@ -6,7 +6,7 @@
 
 **Asignatura:** Bases de Datos II
 
-**Generado:** 13/11/2026 00:06
+**Generado:** 13/11/2026 00:07
 
 Este anexo reúne, en orden de ejecución, todo el código que compone el sistema: el backend en Flask, la conexión con MongoDB Atlas, los seis módulos CRUD, las cinco consultas analíticas, el frontend en HTML/CSS/JavaScript, la semilla de datos, las pruebas y los archivos de despliegue.
 
@@ -5921,7 +5921,7 @@ MONGO_DB=jardineria_db
 
 ## A.26 Exclusión de archivos sensibles
 
-**Archivo:** `.gitignore` · **26 líneas**
+**Archivo:** `.gitignore` · **27 líneas**
 
 Evita subir .env, venv, cachés y archivos temporales al repositorio.
 
@@ -5945,6 +5945,7 @@ __pycache__/
 # Archivos temporales y del sistema
 *.log
 *.tmp
+*.zip
 ~$*.docx
 .DS_Store
 Thumbs.db
@@ -6978,5 +6979,5 @@ if __name__ == "__main__":
 ## Resumen
 
 - Archivos incluidos: **28**
-- Líneas de código y configuración: **6620**
+- Líneas de código y configuración: **6621**
 - Credenciales incluidas: **ninguna** (se usan variables de entorno)

@@ -18,7 +18,7 @@
 
 | Elemento de entrega | Enlace o referencia |
 |---|---|
-| Repositorio Git | `[PENDIENTE: URL del repositorio público en GitHub]` |
+| Repositorio Git | `https://github.com/dannagarciaji-svg/Sistema_Paisajismo` |
 | Aplicación desplegada | `[PENDIENTE: URL pública de Render]` |
 | Documentación técnica | `docs/Documentacion_Tecnica_Sistema_Paisajismo.md` |
 | Documento entregable | `docs/Documentacion_Tecnica_Sistema_Paisajismo.docx` |
@@ -1550,7 +1550,7 @@ La sección 13 describe el procedimiento completo para generar estas evidencias.
 
 ```bash
 # 1. Clonar el repositorio
-git clone [PENDIENTE: URL del repositorio]
+git clone https://github.com/dannagarciaji-svg/Sistema_Paisajismo.git
 cd Sistema_Paisajismo
 
 # 2. Crear y activar el entorno virtual
@@ -1695,7 +1695,7 @@ Las capturas deben tomarse después de publicar el servicio y anexarse con los n
 
 | Elemento | Enlace |
 |---|---|
-| Repositorio Git | `[PENDIENTE: URL del repositorio público en GitHub]` |
+| Repositorio Git | `https://github.com/dannagarciaji-svg/Sistema_Paisajismo` |
 | Aplicación desplegada | `[PENDIENTE: URL pública de Render]` |
 | Documentación técnica | `docs/Documentacion_Tecnica_Sistema_Paisajismo.md` |
 | Documento DOCX | `docs/Documentacion_Tecnica_Sistema_Paisajismo.docx` |

@@ -12,7 +12,7 @@ Aplicación web full-stack para administrar clientes, propiedades, contratos de 
 | Elemento | Enlace |
 |---|---|
 | Aplicación desplegada | `[PENDIENTE: URL pública de Render]` |
-| Repositorio público | `[PENDIENTE: URL del repositorio en GitHub]` |
+| Repositorio público | [https://github.com/dannagarciaji-svg/Sistema_Paisajismo](https://github.com/dannagarciaji-svg/Sistema_Paisajismo) |
 | Documentación técnica | [`docs/Documentacion_Tecnica_Sistema_Paisajismo.md`](docs/Documentacion_Tecnica_Sistema_Paisajismo.md) |
 | Documento entregable (DOCX) | [`docs/Documentacion_Tecnica_Sistema_Paisajismo.docx`](docs/Documentacion_Tecnica_Sistema_Paisajismo.docx) |
 | Evidencias gráficas | [`docs/evidencias/`](docs/evidencias/) |
@@ -105,7 +105,7 @@ Sistema_Paisajismo/
 
 ```bash
 # 1. Clonar el repositorio
-git clone [PENDIENTE: URL del repositorio]
+git clone https://github.com/dannagarciaji-svg/Sistema_Paisajismo.git
 cd Sistema_Paisajismo
 
 # 2. Crear y activar el entorno virtual
