@@ -1,0 +1,27 @@
+# Entornos virtuales y dependencias locales
+venv/
+.venv/
+env/
+
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+
+# Cachés de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Archivos temporales y del sistema
+*.log
+*.tmp
+*.zip
+~$*.docx
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/

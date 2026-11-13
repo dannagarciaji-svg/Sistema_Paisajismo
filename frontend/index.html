@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sistema de Gestión de Servicios de Paisajismo, Mantenimiento de Jardines y Control Botánico" />
+  <title>VerdeVivo · Gestión de Paisajismo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/estilos.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- ===================== BARRA LATERAL ===================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">🌿</span>
+        <div class="brand-text">
+          <strong>VerdeVivo</strong>
+          <small>Paisajismo &amp; Botánica</small>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a class="nav-item" href="#/panel" data-vista="panel">
+          <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+          <span>Panel general</span>
+        </a>
+        <a class="nav-item" href="#/clientes" data-vista="clientes">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          <span>Clientes</span>
+        </a>
+        <a class="nav-item" href="#/propiedades" data-vista="propiedades">
+          <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          <span>Propiedades</span>
+        </a>
+        <a class="nav-item" href="#/contratos" data-vista="contratos">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 18H6V4h7v5h5v11zM8 12h8v2H8zm0 4h8v2H8z"/></svg>
+          <span>Contratos</span>
+        </a>
+        <a class="nav-item" href="#/personal" data-vista="personal">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          <span>Personal</span>
+        </a>
+        <a class="nav-item" href="#/visitas" data-vista="visitas">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 18H5V8h14v13zm-7-2l-4-4 1.41-1.41L12 16.17l4.59-4.58L18 13z"/></svg>
+          <span>Visitas</span>
+        </a>
+        <a class="nav-item" href="#/insumos" data-vista="insumos">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-2.81a5.985 5.985 0 0 0-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg>
+          <span>Insumos</span>
+        </a>
+        <a class="nav-item" href="#/analitica" data-vista="analitica">
+          <svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>
+          <span>Analítica</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="db-status" id="db-status">
+          <span class="dot dot-wait"></span>
+          <div>
+            <strong>Conectando…</strong>
+            <small>MongoDB Atlas</small>
+          </div>
+        </div>
+        <small class="version">Bases de Datos II · v1.0</small>
+      </div>
+    </aside>
+
+    <!-- ===================== CONTENIDO ===================== -->
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn only-mobile" id="btn-menu" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <div class="topbar-title">
+          <h1 id="titulo-vista">Panel general</h1>
+          <p id="subtitulo-vista">Resumen operativo del sistema de paisajismo</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost" id="btn-refrescar" title="Actualizar datos">
+            <svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+            <span>Actualizar</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="content" id="contenido" aria-live="polite">
+        <div class="skeleton-wrap">
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>Sistema de Gestión de Servicios de Paisajismo, Mantenimiento de Jardines y Control Botánico</span>
+        <span>Flask · MongoDB Atlas · Aggregation Pipeline</span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL GENÉRICO ===================== -->
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <header class="modal-head">
+        <div>
+          <h2 id="modal-titulo">Formulario</h2>
+          <p id="modal-subtitulo"></p>
+        </div>
+        <button class="icon-btn" id="modal-cerrar" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </header>
+      <div class="modal-body" id="modal-cuerpo"></div>
+      <footer class="modal-foot" id="modal-pie"></footer>
+    </div>
+  </div>
+
+  <!-- ===================== CONFIRMACIÓN ===================== -->
+  <div class="modal-backdrop" id="confirmacion" hidden>
+    <div class="modal modal-sm" role="alertdialog" aria-modal="true" aria-labelledby="confirmar-titulo">
+      <header class="modal-head">
+        <div>
+          <h2 id="confirmar-titulo">Confirmar acción</h2>
+          <p id="confirmar-texto"></p>
+        </div>
+      </header>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" id="confirmar-no">Cancelar</button>
+        <button class="btn btn-danger" id="confirmar-si">Sí, continuar</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/formularios.js"></script>
+  <script src="/static/js/vistas.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
